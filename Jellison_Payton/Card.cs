@@ -8,5 +8,11 @@ namespace Jellison_Payton
 {
     class Card
     {
+        public enum CardSuit
+        {
+            Clubs, Spades, Hearts, Diamonds
+        }
+        public CardSuit Suit { get; private set; }
+
     }
 }
