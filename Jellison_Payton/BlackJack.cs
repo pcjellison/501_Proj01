@@ -51,5 +51,32 @@ namespace Jellison_Payton
             Console.WriteLine("========== New Game ==========");
             Console.WriteLine("You have: $" + customer.Money);
         }
+
+        private bool checkMoreGame()
+        {
+            while(true)
+            {
+                Console.Write("More Game (Y or N)?: ");
+                string ans = Console.ReadLine();
+                char ch;
+                
+                if(ans.Length > 0)
+                {
+                    ch = ans[0];
+                    if((ch == 'Y' || (ch == 'y'))
+                    {
+                        return true;
+                    }
+                    else if((ch == 'N') || (ch == 'n'))
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        Console.Write("Answer not acceptable");
+                    }
+                }   //end outer if statement
+            }   //end while loop
+        }   //end checkMoreGame
     }
 }

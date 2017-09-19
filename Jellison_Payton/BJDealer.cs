@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Jellison_Payton
 {
-    class BJDealer  //inherits BJPlayer
+    class BJDealer : BJPlayer //inherits BJPlayer
     {
-        BJDealer(decimal d, Deck deck)
+        BJDealer(decimal d, Deck deck) : base(d, deck)
         {
             //pass the arguments to "base"
         }
@@ -18,6 +18,7 @@ namespace Jellison_Payton
             //updates handString
             //StringBuilder implements "indexer"; you can set/get/ i_th character
             //using "handString[i]"
+
         }
     }
 }

@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Jellison_Payton
 {
-    class BJCustomer    //inherits BJPlayer
+    class BJCustomer : BJPlayer   //inherits BJPlayer
     {
         //------FIELDS---------
         int NumWins;
         int NumLosses;
         int NumTies;
 
-        BJCustomer(decimal d, Deck deck)
+        BJCustomer(decimal d, Deck deck) : base(d, deck)
         {
             //pass the arguments to "base"
         }

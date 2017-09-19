@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Jellison_Payton
 {
-    class BJPlayer
+    public class BJPlayer
     {
         //-----FIELDS-----------
         protected Card[] hand;
@@ -16,10 +16,9 @@ namespace Jellison_Payton
         protected StringBuilder handString;
         int numAces;        //num of ace cards in hand (used when HandValue > 21)
 
-        BJPlayer(decimal d, Deck deck)
+        public BJPlayer(decimal d, Deck deck)
         {
             Money = d;
-
         }
 
         void Draw(string s, bool faceUP)
