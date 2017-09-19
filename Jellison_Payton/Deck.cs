@@ -74,7 +74,7 @@ namespace Jellison_Payton
 #endif
         }
 
-        void ReturnCard(Card c)
+        public void ReturnCard(Card c)
         {
 
         }
