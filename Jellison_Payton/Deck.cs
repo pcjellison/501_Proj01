@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Jellison_Payton
 {
-    class Deck
+    public class Deck
     {
-        private Card [] deck = new Card [52];            //private field - deck
-        private int topCardIndex;   //index of the top card in the deck
+        Card [] deck = new Card [52];            //private field - deck
+        public int topCardIndex;   //index of the top card in the deck
 
         /// <summary>
         /// Creates a deck of 52 cards
         /// </summary>
-        Deck()
+        public Deck()
         {
             int count = 0;
             for (int i = 0; i < 4; i++)
@@ -27,6 +27,7 @@ namespace Jellison_Payton
                 }
             }
             topCardIndex = 51;
+            deck[topCardIndex + 1] = null;
         }
 
         /// <summary>
@@ -34,7 +35,7 @@ namespace Jellison_Payton
         /// https://rosettacode.org/wiki/Knuth_shuffle#C.23
         /// Above link was used to create shuffle method
         /// </summary>
-        void Shuffle()
+        public void Shuffle()
         {
             Random rand = new Random();
             for (int i = topCardIndex; i>0; i--)
@@ -47,7 +48,7 @@ namespace Jellison_Payton
         }
 
         //return the top card in the deck
-        Card Draw (string s)
+        public Card Draw (string s)
         {
 #if DEBUG
 //Draw (string prompt) for debug mode (communicate w/ the customer to determine a card to draw)

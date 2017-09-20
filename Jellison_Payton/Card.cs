@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Jellison_Payton
 {
-    class Card
+    public class Card
     {
-        int rank;
+        public int rank;
         internal enum CardSuit { D, H, S, C };
         internal CardSuit suit { get; set; }
         bool FaceUp = true;
