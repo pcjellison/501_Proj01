@@ -13,6 +13,9 @@ namespace Jellison_Payton
         BJCustomer customer;
         decimal betAmount;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public BlackJack()
         {
             deck = new Deck();

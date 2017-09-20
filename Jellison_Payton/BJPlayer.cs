@@ -17,6 +17,11 @@ namespace Jellison_Payton
         protected StringBuilder handString;
         int numAces;        //num of ace cards in hand (used when HandValue > 21)
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="d">amount of  money player has</param>
+        /// <param name="tempDeck"></param>
         public BJPlayer(decimal d, Deck tempDeck)
         {
             Money = d;
@@ -28,6 +33,11 @@ namespace Jellison_Payton
             handString = new StringBuilder();
         }
 
+        /// <summary>
+        /// Draws Cards
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="faceUP"></param>
         public void Draw(string s, bool faceUP)
         {
             //to draw one card from deck and put it in hand
@@ -56,6 +66,9 @@ namespace Jellison_Payton
 
         }
 
+        /// <summary>
+        /// Returns all cards in hand to deck
+        /// </summary>
         public void ReturnHandCardsToDeck()
         {
             //return cards in hand to deck

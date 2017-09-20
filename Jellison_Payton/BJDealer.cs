@@ -8,11 +8,20 @@ namespace Jellison_Payton
 {
     public class BJDealer : BJPlayer //inherits BJPlayer
     {
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="d"></param>
+        /// <param name="deck"></param>
         public BJDealer(decimal d, Deck deck) : base(d, deck)
         {
             //pass the arguments to "base"
         }
 
+        /// <summary>
+        /// Flips Dealer's second card face up
+        /// </summary>
+        /// <param name="indexInHand"></param>
         public void flipCard(int indexInHand)
         {
             hand[indexInHand].FaceUp = true;
