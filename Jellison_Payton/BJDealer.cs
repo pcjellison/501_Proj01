@@ -13,12 +13,13 @@ namespace Jellison_Payton
             //pass the arguments to "base"
         }
 
-        void flipCard(int indexInHand)
+        public void flipCard(int indexInHand)
         {
-            //updates handString
-            //StringBuilder implements "indexer"; you can set/get/ i_th character
-            //using "handString[i]"
-            
+            hand[indexInHand].FaceUp = true;
+            string cardFlipped = base.hand[indexInHand].ToString();
+            base.handString[indexInHand * 3] = cardFlipped[0];
+            base.handString[(indexInHand * 3) + 1] = cardFlipped[1];
+
         }
     }
 }

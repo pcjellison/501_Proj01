@@ -11,7 +11,7 @@ namespace Jellison_Payton
         public int rank;
         internal enum CardSuit { D, H, S, C };
         internal CardSuit suit { get; set; }
-        bool FaceUp = true;
+        public bool FaceUp = true;
 
         /// <summary>
         /// Card constructor

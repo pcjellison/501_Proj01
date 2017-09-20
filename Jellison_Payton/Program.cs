@@ -10,7 +10,8 @@ namespace Jellison_Payton
     {
         static void Main(string[] args)
         {
-
+            BlackJack game = new BlackJack();
+            game.go();
         }
     }
 }

@@ -9,9 +9,9 @@ namespace Jellison_Payton
     public class BJCustomer : BJPlayer   //inherits BJPlayer
     {
         //------FIELDS---------
-        int NumWins;
-        int NumLosses;
-        int NumTies;
+        public int NumWins;
+        public int NumLosses;
+        public int NumTies;
 
         public BJCustomer(decimal d, Deck deck) : base(d, deck)
         {
